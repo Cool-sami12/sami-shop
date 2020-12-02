@@ -3,7 +3,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
-//const productsRouter = require('./routes/products');
+const productsRouter = require('./routes/products');
 const adminRouter = require('./routes/admin');
 const userRouter = require('./routes/users');
 
@@ -30,7 +30,7 @@ connection.once('open', () => {
 })
 
 
-//app.use('/products', productsRouter);
+app.use('/products', productsRouter);
 app.use('/admin', adminRouter);
 app.use('/users', userRouter);
 

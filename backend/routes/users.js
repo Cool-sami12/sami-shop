@@ -19,5 +19,6 @@ router.get('/me', auth, async(req, res) => {
     // View logged in user profile
     res.send(req.user)
 })
+//router.post('/me/logout', auth , userController.Logout)
 
 module.exports = router;

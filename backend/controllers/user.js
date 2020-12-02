@@ -35,6 +35,22 @@ module.exports = {
         } catch (error) {
             res.status(400).send(error)
         }
-    })
+    // })
+    // Logout:( async (req,res) =>{
+    //     // logout from the application 
+    //     try{
+    //         if(req.user.token) {
+    //             return ! req.token
+                
+    //         } 
+            
+    //         await req.user.save()
+    //         res.status(200).send({message:'Logout successful'})
+    //     } catch(error){
+    //          res.status(500).send(error) 
+    //          console.log(error)  
+    //     }
+
+     })
 
 }
